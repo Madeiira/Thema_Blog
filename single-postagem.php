@@ -17,7 +17,6 @@
 
                                 foreach ($termos as $termo) {
                                         $link=get_term_link($termo);
-
                                         echo"<a href='$link'>".$termo->name."</a>.</h3> ";
                                         echo'<h6>Data de postagem: '; the_field('ano_de_postagem');
                                         echo' / Tema: '; the_field('tema');

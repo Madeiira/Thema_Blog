@@ -16,10 +16,10 @@
              $body = sprintf('<div class="media-body"><h3 class="media-heading"><a href="%s">%s</a></h3><p>%s</p></div>',
              get_the_permalink(), get_the_title(), get_the_excerpt());
  
+            
              printf('<li class="media">%s%s</li>',$image,$body);
-             echo "<br/>";
-                
-                echo "Publicadores: ";
+                          echo "<br/>";
+                          echo "Publicador: ";
                 $id = get_the_id();
                 $termos = wp_get_post_terms($id,'publicadores');
  
@@ -28,6 +28,7 @@
  
                     echo "<a href='$link'>".$termo->name."</a>. ";
                 }
+                    
              endwhile;
             echo "</ul>";
            else:
