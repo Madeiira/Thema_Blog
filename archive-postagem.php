@@ -1,8 +1,12 @@
-﻿<?php get_header();?>
+﻿<!DOCTYPE html>
+<html lang="pt-br" >
+<body style="background-color:black;">
+
+<?php get_header();?>
 <div class="container">
- <h1>Postagens</h1>
+ <h1 style="color:white">Postagens</h1>
     <div class="row">
-        <div class="col-md-9">
+        <div class="col-md-9"> <!-- max size 12 !-->
            <?php 
            if(have_posts()):
             echo '<ul class="media-list">';
@@ -13,33 +17,35 @@
                 get_the_permalink(), get_the_post_thumbnail());
              }
  
-             $body = sprintf('<div class="media-body"><h3 class="media-heading"><a href="%s">%s</a></h3><p>%s</p></div>',
+             $body = sprintf('<div  class="media-body"><h3 class="media-heading"><a href="%s" style="color:white">%s</a></h3><p style="color:white">%s</p></div>',
              get_the_permalink(), get_the_title(), get_the_excerpt());
  
             
-             printf('<li class="media">%s%s</li>',$image,$body);
+             printf('<li class="media" >%s%s</li>',$image,$body);
                           echo "<br/>";
-                          echo "Publicador: ";
+                          echo "<p style='color:white;'>Publicador: </p>";
                 $id = get_the_id();
                 $termos = wp_get_post_terms($id,'publicadores');
  
                 foreach ($termos as $termo) {
                     $link = get_term_link($termo);
  
-                    echo "<a href='$link'>".$termo->name."</a>. ";
+                    echo "<a style='color:white' href='$link' >".$termo->name."</a>. ";
                 }
                     
              endwhile;
             echo "</ul>";
            else:
-            echo "<p>Ainda não há nenhum post publicado.</p>";
+            echo "<p style='color:white'>Ainda não há nenhum post publicado.</p>";
            endif;
            ?>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3"> <!-- max size 12 !-->
             <?php  get_sidebar(); ?>
         </div>
     </div>
 </div>
 
 <?php get_footer(); ?>
+        </body>
+        </html>

@@ -7,6 +7,7 @@
            if(have_posts()): the_post();
                 the_post_thumbnail('medium');
                 the_content();
+                
            endif;
            ?>
         </div>
@@ -16,4 +17,4 @@
     </div>
 </div>
  
-<?php get_footer(); ?> 
+<?php get_footer();  ?>  

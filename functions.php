@@ -4,11 +4,13 @@
 <?php
  
         function my_wp_scripts() {
+            
             wp_enqueue_style('bootstrap',
             sprintf('%s/assets/css/bootstrap.min.css', get_template_directory_uri()));
             wp_enqueue_style('style', get_stylesheet_uri());
             wp_enqueue_script('bootstrap',
             sprintf('%s/assets/css/bootstrap.min.js', get_template_directory_uri()), array('jquery'),null,true);
+        
         }
   
             add_action('wp_enqueue_scripts','my_wp_scripts');
@@ -19,7 +21,7 @@
     
     /* CRIAÇÃO DE CUSTOM POST TYPES */
     
-        function theme_blog_post_type_postagem() {
+        function theme_blog_post_type_postagem() { //function posts
             $labels=array(
                 'name' => "Postagem",
                 'singular_name' => "Postagem",
@@ -51,7 +53,7 @@
                     'exclude_from_search' => false
                     );
             
-            register_post_type('postagem',$args);
+            register_post_type('postagem',$args); // name of the parameter 
             
             }
   
@@ -59,7 +61,7 @@
  
      
  
-        function theme_blog_taxonomias() {   // Taxonomia não , que possui pai/filho - Tema
+        function theme_blog_taxonomias() {   // Taxonomia que não possui pai/filho - Tema  //   Taxonomy not having parent / child - theme
         
           
             
@@ -88,7 +90,7 @@
                 register_taxonomy('temas','postagem',$args);
         
  
-            $labels=array( //taxonomia  hierarquica -Publicadores
+            $labels=array( //taxonomia  hierarquica -Publicadores  //  Hierarchical taxonomy - Publishers
                 'name' => "Publicadores",
                 'singular_name' => "Publicador",
                 'search_item' => "Procurar Publicador",
