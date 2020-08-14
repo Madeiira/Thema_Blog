@@ -5,7 +5,9 @@
         foreach($publicadores as $publicador):
             
             $link = get_term_link($publicador);
-            printf('<li style="color:white" class="list-group-item"><a href="%s" title="%s"> %s </a></li>',$link,sprintf("Ver Post de %s",$publicador->name),$publicador->name);
+            echo'<p  >';
+            printf('<li  class="list-group-item"><a href="%s" title="%s"> %s </a></li>',$link,sprintf("Ver Post de %s",$publicador->name),$publicador->name);
+            echo'</p>';
         endforeach;
     ?> 
 </ul>

@@ -4,7 +4,7 @@
 <?php get_header(); 	  ?> 
  <?php// get_header('personalizado'); ?> 
  <div class="container"> 
- <h2>       	 </h2>
+
    <div class="row">  
      <div class="col-md-6">   <!-- max size 12  !-->
     		<?php 

@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="pt-br" >
 <body style="background-color:black;">
-
 <?php get_header(); 	  ?> 
  <?php// get_header('personalizado'); ?> 
  <div class="container"> 
- <h2>       	 </h2>
+
    <div class="row">  
      <div  class="col-md-7 ">  <!--  max size 12  !-->
     		<?php 
