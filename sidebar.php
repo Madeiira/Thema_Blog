@@ -1,5 +1,6 @@
 <ul class="list-group">
     <?php
+        echo"<h3>Blogueiros:</h3>";
         $publicadores = get_terms('publicadores');
         foreach($publicadores as $publicador):
             

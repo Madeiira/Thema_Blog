@@ -3,7 +3,7 @@
  <div class="container"> 
  <h2>       	 </h2>
    <div class="row">  
-     <div class="col-md-5"> 
+     <div class="col-md-7 "> 
     		<?php 
 			 if(have_posts()):
 			 	echo'<ul class="media-list>';
@@ -28,15 +28,21 @@
 				endwhile;
             
              else:
-            
-                echo"<p>Ainda não tem posts</p>";
+                echo"</br>";
+                echo"</br>";
+                echo"</br>";
+                echo"</br>";
+                echo"<h3><p>Ainda não há posts publicados por este blogueiro. </p> </h3>";
         
                 endif
 			?>
           
 	  </div>
-     <div class="col-md-7"> 
-      <?php //get_sidebar(); ?>
+     <div class="col-md-5"> 
+      <?php
+      echo("") ;
+      get_sidebar(); 
+      ?>
      </div>
 	</div>
  </div>
