@@ -1,7 +1,7 @@
  
 <!DOCTYPE html>
 <html lang="pt-br" >
-<body style="background-color:black;">
+<body style="background-color:dimgrey;">
 
 <?php get_header();?>
         <div class="container">
