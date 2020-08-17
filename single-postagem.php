@@ -27,6 +27,7 @@
                                         echo' / Tema: '; the_field('tema');
                                         echo"</h6>";
                                         echo'<br />';
+                                      
                                 }
                 
                 endif;

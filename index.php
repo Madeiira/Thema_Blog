@@ -7,6 +7,7 @@
 
    <div class="row">  
      <div  class="col-md-7 ">  <!--  max size 12  !-->
+    
     		<?php 
 			 if(have_posts()): //have posts
 			 	echo'<ul class="media-list>';
@@ -20,14 +21,14 @@
 					    get_the_permalink(),get_the_post_thumbnail($post,'full' )); //full thumbnail // or original size
                     
                     } 
-                    
+                   
                     $body = sprintf('<div class="media-body" style="color:white"><h3 style="color:white" media-heading><a  href="%s">%s</a></br>%s </div>',
 					get_the_permalink(),get_the_title(), get_the_excerpt()); //excerpt = resume //
                    
                     echo("</br>");
                     
                     printf('<li class="media">%s%s</li>', $image, $body); //Post:%s, title:%s, content: %s pode ser mudado por uma template tag  $post->ID $post->post_title  $post->post_content
-					
+                   
 				endwhile;
             
              else: // if there are no bloggers
