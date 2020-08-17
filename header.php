@@ -12,6 +12,7 @@
 <nav class="navbar navbar-default" >
   <div class="container-fluid"> 
     <div class="navbar-header">
+    <img src='<?php echo get_stylesheet_directory_uri()."/assets/images/logo.png";?>' id="logo" class="navbar-brand pull-left"></img>
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-exemple-navbar-collapse-1">
       	<span class="sr-only">Toggle navigation </span>
         <span class="icon-bar"> </span>

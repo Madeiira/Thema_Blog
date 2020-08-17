@@ -35,7 +35,7 @@
                 echo"</br>";
                 echo"</br>";
                 echo"</br>";
-                echo"<h3><p>Ainda não há posts publicados por este blogueiro. </p> </h3>"; 
+                echo"<h3><p style='color:white'>Ainda não há posts publicados por este blogueiro. </p> </h3>"; 
         
                 endif
 			?>
