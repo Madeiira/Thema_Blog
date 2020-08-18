@@ -21,6 +21,7 @@
     
     /* CRIAÇÃO DE CUSTOM POST TYPES */
     
+    
         function theme_blog_post_type_postagem() { //function posts
             $labels=array(
                 'name' => "Postagem",
@@ -137,6 +138,6 @@
                 add_action( 'widgets_init', 'arphabet_widgets_init' );
                 
                 
-
+                
 ?>
  
