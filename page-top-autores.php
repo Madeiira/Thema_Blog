@@ -6,7 +6,8 @@
            <?php 
            if(have_posts()): the_post();
                 the_post_thumbnail('medium');
-                echo"<p  style='color:white'>";
+                echo"<p  style='color:white'>   ";
+                 echo do_shortcode( '[topblogueiros]' ); 
                 echo"</p>";
            endif;
            ?>
